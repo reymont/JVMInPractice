@@ -1,7 +1,7 @@
 package geym.zbase.ch10.brkparent;
 
 /**
- * ¼´Ê¹app classloader¿ÉÒÔ¼ÓÔØ£¬ÕâÀïÒ²²»»á¼ÓÔØ£¬ÒòÎªOrderClassLoaderÆÆ»µÁËË«Ç×Ä£Ê½
+ * å³ä½¿app classloaderå¯ä»¥åŠ è½½ï¼Œè¿™é‡Œä¹Ÿä¸ä¼šåŠ è½½ï¼Œå› ä¸ºOrderClassLoaderç ´åäº†åŒäº²æ¨¡å¼
  * @author Administrator
  *
  */

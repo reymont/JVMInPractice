@@ -11,7 +11,7 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.WritableByteChannel;
 
 /**
- * ´òÆÆË«Ç×Î¯ÍĞ¹ØÏµµÄÀı×Ó ÕâÀï»áÏÈ´Ó×ÓClassLoader¼ÓÔØÀà£¬È»ºó²éÕÒ¸¸Loader
+ * æ‰“ç ´åŒäº²å§”æ‰˜å…³ç³»çš„ä¾‹å­ è¿™é‡Œä¼šå…ˆä»å­ClassLoaderåŠ è½½ç±»ï¼Œç„¶åæŸ¥æ‰¾çˆ¶Loader
  * 
  * @author Geym
  *

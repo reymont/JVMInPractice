@@ -4,9 +4,9 @@ public class StringBasic {
 public static void main(String[] args) {
     String str1=new String("abc");
     String str2=new String("abc");
-    System.out.println(str1==str2);             //·µ»Øfalse
-    System.out.println(str1==str2.intern());        //·µ»Øfalse
-    System.out.println("abc"==str2.intern());       //·µ»Øtrue
-    System.out.println(str1.intern()==str2.intern());       //·µ»Øtrue
+    System.out.println(str1==str2);             //è¿”å›žfalse
+    System.out.println(str1==str2.intern());        //è¿”å›žfalse
+    System.out.println("abc"==str2.intern());       //è¿”å›žtrue
+    System.out.println(str1.intern()==str2.intern());       //è¿”å›žtrue
 }
 }

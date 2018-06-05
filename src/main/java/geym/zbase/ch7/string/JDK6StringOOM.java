@@ -14,7 +14,7 @@ public class JDK6StringOOM {
     
     public static void main(String args[]){
         for(int i=0;i<10000;i++){
-            //Ä£Äâ¶ÁÈëÒ»¸öºÜ´óµÄ×Ö·û´®
+            //æ¨¡æ‹Ÿè¯»å…¥ä¸€ä¸ªå¾ˆå¤§çš„å­—ç¬¦ä¸²
             StringBuffer sb=new StringBuffer();
             for(int j=0;j<10240;j++){
                 sb.append(j);

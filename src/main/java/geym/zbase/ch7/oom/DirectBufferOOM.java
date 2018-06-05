@@ -3,9 +3,9 @@ package geym.zbase.ch7.oom;
 import java.nio.ByteBuffer;
 /**
  * -Xmx512m -XX:+PrintGCDetails  ok  
- * -Xmx1g -XX:+PrintGCDetails    OOM Ç¿ÖÆGC¿ÉÒÔ
- * DirectBufferµ½´ï-XX:MaxDirectMemorySizeÖ®Ç°£¬
- * java²»»áÓÉDirectBufferÀ´´¥·¢GC£¬µ«ÊÇÔÚGCÊ±»á»ØÊÕDirectBuffer
+ * -Xmx1g -XX:+PrintGCDetails    OOM å¼ºåˆ¶GCå¯ä»¥
+ * DirectBufferåˆ°è¾¾-XX:MaxDirectMemorySizeä¹‹å‰ï¼Œ
+ * javaä¸ä¼šç”±DirectBufferæ¥è§¦å‘GCï¼Œä½†æ˜¯åœ¨GCæ—¶ä¼šå›æ”¶DirectBuffer
  * @author Geym
  *
  */

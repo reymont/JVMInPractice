@@ -3,10 +3,10 @@ package geym.zbase.ch5.noclassgc;
 import java.util.HashMap;
 
 /**
- * noclassgc 不会回收perm
+ * noclassgc 涓嶄細鍥炴敹perm
  *-XX:+PrintGCDetails -XX:PermSize=5M -XX:MaxPermSize=5m  -verbose:class -Xnoclassgc
  *
- * Perm默认不用CMS，加了CMSClassUnloadingEnabled启用CMS回收Perm
+ * Perm榛樿涓嶇敤CMS锛屽姞浜咰MSClassUnloadingEnabled鍚敤CMS鍥炴敹Perm
  * -XX:+PrintGCDetails -XX:PermSize=5M -XX:MaxPermSize=5m  -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled
  * @author Geym
  *

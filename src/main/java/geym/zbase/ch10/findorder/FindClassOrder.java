@@ -2,7 +2,7 @@ package geym.zbase.ch10.findorder;
 
 /**
  * -Xbootclasspath/a:D:/tmp/clz
- * -XBootClasspath Ö¸¶¨ ËµÃ÷¼ÓÔØÏÈ´ÓÆô¶¯classloader¿ªÊ¼
+ * -XBootClasspath æŒ‡å®š è¯´æ˜åŠ è½½å…ˆä»å¯åŠ¨classloaderå¼€å§‹
  * @author Administrator
  *
  */

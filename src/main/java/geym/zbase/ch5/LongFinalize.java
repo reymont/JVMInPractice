@@ -1,7 +1,7 @@
 package geym.zbase.ch5;
 
 /**
- * ÓĞÁËÒ»¸öÂıµÄfinalize()»áµ¼ÖÂÎŞ·¨»ØÊÕ
+ * æœ‰äº†ä¸€ä¸ªæ…¢çš„finalize()ä¼šå¯¼è‡´æ— æ³•å›æ”¶
  * 
  * -Xmx10m -Xms10m -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath="D:/f.dump"
  * @author Administrator

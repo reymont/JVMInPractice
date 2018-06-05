@@ -6,21 +6,21 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class AtomicLess {
-	private static final int MAX_THREADS = 3;					//Ïß³ÌÊı
-	private static final int TASK_COUNT = 3;						//ÈÎÎñÊı
-	private static final int TARGET_COUNT = 10000000;				//Ä¿±ê×ÜÊı
+	private static final int MAX_THREADS = 3;					//çº¿ç¨‹æ•°
+	private static final int TASK_COUNT = 3;						//ä»»åŠ¡æ•°
+	private static final int TARGET_COUNT = 10000000;				//ç›®æ ‡æ€»æ•°
 	
-	private AtomicLong acount =new AtomicLong(0L);			//ÎŞËøµÄÔ­×Ó²Ù×÷
+	private AtomicLong acount =new AtomicLong(0L);			//æ— é”çš„åŸå­æ“ä½œ
 	private long count=0;
 	
 	static CountDownLatch cdlsync=new CountDownLatch(TASK_COUNT);
 	static CountDownLatch cdlatomic=new CountDownLatch(TASK_COUNT);
 
-	protected synchronized long inc(){							//ÓĞËøµÄ¼Ó·¨
+	protected synchronized long inc(){							//æœ‰é”çš„åŠ æ³•
 		return ++count;
 	}
 	
-	protected synchronized long getCount(){						//ÓĞËøµÄ²Ù×÷
+	protected synchronized long getCount(){						//æœ‰é”çš„æ“ä½œ
 		return count;
 	}
 	
@@ -31,7 +31,7 @@ public class AtomicLess {
 	public class SyncThread implements Runnable{
 		protected String name;
 		protected long starttime;
-		AtomicLess out;										// TestAtomicÎªµ±Ç°ÀàÃû
+		AtomicLess out;										// TestAtomicä¸ºå½“å‰ç±»å
 		public SyncThread(AtomicLess o,long starttime){
 			out=o;
 			this.starttime=starttime;
@@ -39,7 +39,7 @@ public class AtomicLess {
 		@Override
 		public void run() {
 			long v=out.getCount();
-			while(v<TARGET_COUNT){						//ÔÚµ½´ïÄ¿±êÖµÇ°£¬²»Í£Ñ­»·
+			while(v<TARGET_COUNT){						//åœ¨åˆ°è¾¾ç›®æ ‡å€¼å‰ï¼Œä¸åœå¾ªç¯
 				v=out.inc();
 			}
 			long endtime=System.currentTimeMillis();
@@ -53,7 +53,7 @@ public class AtomicLess {
 		long starttime=System.currentTimeMillis();
 		SyncThread sync=new SyncThread(this,starttime);
 		for(int i=0;i<TASK_COUNT;i++){
-			exe.submit(sync); 								//Ìá½»Ïß³Ì¿ªÊ¼¼ÆËã
+			exe.submit(sync); 								//æäº¤çº¿ç¨‹å¼€å§‹è®¡ç®—
 		}
 		cdlsync.await();
 		exe.shutdown();
@@ -65,10 +65,10 @@ public class AtomicLess {
 			this.starttime=starttime;
 		}
 		@Override
-		public void run() {									//ÔÚµ½´ïÄ¿±êÖµÇ°£¬²»Í£Ñ­»·
+		public void run() {									//åœ¨åˆ°è¾¾ç›®æ ‡å€¼å‰ï¼Œä¸åœå¾ªç¯
 			long v=acount.get();
 			while(v<TARGET_COUNT){
-				v=acount.incrementAndGet();					//ÎŞËøµÄ¼Ó·¨
+				v=acount.incrementAndGet();					//æ— é”çš„åŠ æ³•
 			}
 			long endtime=System.currentTimeMillis();
 			System.out.println("AtomicThread spend:"+(endtime-starttime)+"ms"+" v="+v);
@@ -81,7 +81,7 @@ public class AtomicLess {
 		long starttime=System.currentTimeMillis();
 		AtomicThread atomic=new AtomicThread(starttime);
 		for(int i=0;i<TASK_COUNT;i++){
-			exe.submit(atomic);								//Ìá½»Ïß³Ì¿ªÊ¼¼ÆËã
+			exe.submit(atomic);								//æäº¤çº¿ç¨‹å¼€å§‹è®¡ç®—
 		}
 		cdlatomic.await();
 		exe.shutdown();

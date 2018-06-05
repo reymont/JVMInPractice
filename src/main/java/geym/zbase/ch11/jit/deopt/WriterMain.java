@@ -2,9 +2,9 @@ package geym.zbase.ch11.jit.deopt;
 
 /**
  * -XX:+PrintCompilation -client -Xcomp
- * -XX:+PrintCompilation -server -Xcomp ²é¿´±àÒëµÄº¯Êı
- * -XX:+PrintCompilation -server -Xcomp  -XX:+TieredCompilation ±àÒë¼¶±ğµ÷Õû
- * -XX:+PrintCompilation -server -Xcomp -XX:+TieredCompilation -XX:NmethodSweepFraction=1 ´óÁ¿º¯Êı±»zombie
+ * -XX:+PrintCompilation -server -Xcomp æŸ¥çœ‹ç¼–è¯‘çš„å‡½æ•°
+ * -XX:+PrintCompilation -server -Xcomp  -XX:+TieredCompilation ç¼–è¯‘çº§åˆ«è°ƒæ•´
+ * -XX:+PrintCompilation -server -Xcomp -XX:+TieredCompilation -XX:NmethodSweepFraction=1 å¤§é‡å‡½æ•°è¢«zombie
  * 
  * @author Administrator
  *

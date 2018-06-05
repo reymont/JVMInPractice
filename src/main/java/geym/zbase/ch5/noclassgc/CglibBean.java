@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class CglibBean {
     /** 
-     * 实体Object 
+     * 瀹炰綋Object 
      */  
     public Object object = null;  
   
@@ -27,7 +27,7 @@ public class CglibBean {
   
   
     /** 
-     * 得到该实体bean对象 
+     * 寰楀埌璇ュ疄浣揵ean瀵硅薄 
      *  
      * @return 
      */  

@@ -2,7 +2,7 @@ package geym.zbase.ch7.oom;
 
 /**
  * 
- * 内存越少 线程越多
+ * 鍐呭瓨瓒婂皯 绾跨▼瓒婂
  * @author Geym
  *
  */

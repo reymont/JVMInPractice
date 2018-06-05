@@ -1,8 +1,8 @@
 package geym.zbase.ch10.staticdead;
 
 /**
- * ���̳߳�ʼ��һ���� ֻ��һ���̻߳����<clinit>
- * �����ȴ����̣߳��ڵ�һ���߳���ɺ󣬲��������<clinit>
+ * 多线程初始化一个类 只有一个线程会进入<clinit>
+ * 其他等待的线程，在第一个线程完成后，并不会进入<clinit>
  * @author Administrator
  *
  */

@@ -6,8 +6,8 @@ package geym.zbase.ch8.jmm;
  */
 public class VolatileTest {
 	public static class MyThread extends Thread{
-		private boolean stop = false;  	//È·±£stop±äÁ¿ÔÚ¶àÏß³ÌÖĞ¿É¼û
-		public synchronized void stopMe(){				//ÔÚÆäËûÏß³ÌÖĞµ÷ÓÃ£¬Í£Ö¹±¾Ïß³Ì
+		private boolean stop = false;  	//ç¡®ä¿stopå˜é‡åœ¨å¤šçº¿ç¨‹ä¸­å¯è§
+		public synchronized void stopMe(){				//åœ¨å…¶ä»–çº¿ç¨‹ä¸­è°ƒç”¨ï¼Œåœæ­¢æœ¬çº¿ç¨‹
 			stop=true;
 		}
 		public synchronized boolean stopped(){
@@ -15,7 +15,7 @@ public class VolatileTest {
 		}
 		public void run() {  
 			int i = 0;  
-			while (!stopped()) { 					//ÔÚÆäËûÏß³ÌÖĞ¸Ä±ästopµÄÖµ
+			while (!stopped()) { 					//åœ¨å…¶ä»–çº¿ç¨‹ä¸­æ”¹å˜stopçš„å€¼
 				i++;  
 			}
 			System.out.println("Stop Thread");  

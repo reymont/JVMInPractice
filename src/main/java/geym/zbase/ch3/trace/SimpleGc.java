@@ -16,7 +16,7 @@ import java.util.List;
  * -XX:+PrintHeapAtGC
  * 
  * -XX:+PrintVMOptions  -XX:+PrintCommandLineFlags
- * -XX:+PrintFlagsFinal  ´òÓ¡ËùÓĞ
+ * -XX:+PrintFlagsFinal  æ‰“å°æ‰€æœ‰
  * 
  * -Xloggc:log/gc.log
  * @author geym

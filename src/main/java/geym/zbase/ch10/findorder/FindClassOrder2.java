@@ -12,7 +12,7 @@ import java.nio.channels.WritableByteChannel;
 
 /**
  * -Xbootclasspath/a:D:/tmp/clz
- * -XBootClasspath Ö¸¶¨ ËµÃ÷ÅĞ¶ÏÀàÊÇ·ñ´æÔÚ£¬´Óapp classloader¿ªÊ¼
+ * -XBootClasspath æŒ‡å®š è¯´æ˜åˆ¤æ–­ç±»æ˜¯å¦å­˜åœ¨ï¼Œä»app classloaderå¼€å§‹
  * @author Administrator
  *
  */

@@ -2,15 +2,15 @@ package geym.zbase.ch5;
 
 /**
  * 
- * 测试速度
+ * 娴嬭瘯閫熷害
  * -XX:-UseTLAB  -Xcomp -XX:-BackgroundCompilation -XX:-DoEscapeAnalysis -server
  * 
  * -XX:+UseTLAB  -Xcomp -XX:-BackgroundCompilation -XX:-DoEscapeAnalysis -server
  * 
- * 测试日志
+ * 娴嬭瘯鏃ュ織
  * -XX:+UseTLAB  -XX:+PrintTLAB -XX:+PrintGC -XX:TLABSize=307200 -XX:-ResizeTLAB
  * 
- * 使用 XX:TLABRefillWasteFraction 改变refill waste
+ * 浣跨敤 XX:TLABRefillWasteFraction 鏀瑰彉refill waste
  * -XX:+UseTLAB  -XX:+PrintTLAB -XX:+PrintGC -XX:TLABSize=102400 -XX:-ResizeTLAB -XX:TLABRefillWasteFraction=100 -XX:-DoEscapeAnalysis -server
  * @author geym
  *

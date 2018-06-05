@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * 
  * JDK7
  * -XX:MaxPermSize=5m -XX:+PrintGC
- * ·ÖÅäÔÚ¶Ñ
+ * åˆ†é…åœ¨å †
  * 
  * @author geym
  *

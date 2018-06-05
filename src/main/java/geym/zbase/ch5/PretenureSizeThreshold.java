@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ³¬¹ı¸ø¶¨´óĞ¡µÄ¶ÔÏóÖ±½Ó½úÉı
+ * è¶…è¿‡ç»™å®šå¤§å°çš„å¯¹è±¡ç›´æ¥æ™‹å‡
  * -Xmx32m -Xms32m -XX:+UseSerialGC -XX:+PrintGCDetails -XX:PretenureSizeThreshold=1000
- * ±ØĞë½ûÖ¹TLAB£¬·ñÔòĞ¡¶ÔÏóÒÀÈ»»áÔÚedenÇø
+ * å¿…é¡»ç¦æ­¢TLABï¼Œå¦åˆ™å°å¯¹è±¡ä¾ç„¶ä¼šåœ¨edenåŒº
  * -Xmx32m -Xms32m -XX:+UseSerialGC -XX:+PrintGCDetails -XX:PretenureSizeThreshold=1000 -XX:-UseTLAB
  * @author geym
  *

@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ×î´óµÄ½úÉıÄêÁä
- * MaxTenuringThreshold Ä¬ÈÏÖµ15
+ * æœ€å¤§çš„æ™‹å‡å¹´é¾„
+ * MaxTenuringThreshold é»˜è®¤å€¼15
  * 
  * -Xmx1024M -Xms1024M -XX:+PrintGCDetails -XX:MaxTenuringThreshold=15 -XX:+PrintHeapAtGC
  * 
