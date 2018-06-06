@@ -9,16 +9,16 @@ class AddSecurityCheckClassAdapter extends ClassVisitor {
 		super(Opcodes.ASM5, cv);
 	}
     
-	// ÖØĞ´ visitMethod£¬·ÃÎÊµ½ "operation" ·½·¨Ê±£¬
-    // ¸ø³ö×Ô¶¨Òå MethodVisitor£¬Êµ¼Ê¸ÄĞ´·½·¨ÄÚÈİ
+	// é‡å†™ visitMethodï¼Œè®¿é—®åˆ° "operation" æ–¹æ³•æ—¶ï¼Œ
+    // ç»™å‡ºè‡ªå®šä¹‰ MethodVisitorï¼Œå®é™…æ”¹å†™æ–¹æ³•å†…å®¹
     public MethodVisitor visitMethod(final int access, final String name, 
         final String desc, final String signature, final String[] exceptions) { 
         MethodVisitor mv = cv.visitMethod(access, name, desc, signature,exceptions);
         MethodVisitor wrappedMv = mv; 
         if (mv != null) { 
-            // ¶ÔÓÚ "operation" ·½·¨
+            // å¯¹äº "operation" æ–¹æ³•
             if (name.equals("operation")) { 
-                // Ê¹ÓÃ×Ô¶¨Òå MethodVisitor£¬Êµ¼Ê¸ÄĞ´·½·¨ÄÚÈİ
+                // ä½¿ç”¨è‡ªå®šä¹‰ MethodVisitorï¼Œå®é™…æ”¹å†™æ–¹æ³•å†…å®¹
                 wrappedMv = new AddSecurityCheckMethodAdapter(mv); 
             } 
         } 

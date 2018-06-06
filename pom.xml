@@ -32,13 +32,37 @@
             <artifactId>cglib-nodep</artifactId>
             <version>3.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm-all -->
+		<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>5.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm-all -->
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-all</artifactId>
-            <version>5.0.3</version>
+            <version>5.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.6.0</version>
+            <scope>system</scope>
+            <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.netbeans.modules/org-netbeans-lib-profiler -->
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-lib-profiler</artifactId>
+            <version>RELEASE802</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.netbeans.modules/org-netbeans-modules-profiler-oql -->
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-modules-profiler-oql</artifactId>
+            <version>RELEASE802</version>
+        </dependency>
 	</dependencies>
 
 	<build>

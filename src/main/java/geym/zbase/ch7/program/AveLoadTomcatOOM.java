@@ -10,7 +10,7 @@ import org.netbeans.modules.profiler.oql.engine.api.OQLEngine;
 
 public class AveLoadTomcatOOM {
     public static final String dumpFilePath="d:/tmp/tomcat_oom/tomcat.hprof";
-    
+
     public static void main(String args[]) throws Exception{
         OQLEngine engine;
         final List<Long> creationTimes=new ArrayList<Long>(10000);
@@ -22,11 +22,11 @@ public class AveLoadTomcatOOM {
                 return false;
             }
         });
-        
+
         Collections.sort(creationTimes);
 
         double min=creationTimes.get(0)/1000;
         double max=creationTimes.get(creationTimes.size()-1)/1000;
-        System.out.println("Æ½¾ùÑ¹Á¦£º"+creationTimes.size()*1.0/(max-min)+"´Î/Ãë");
+        System.out.println("å¹³å‡å‹åŠ›ï¼š"+creationTimes.size()*1.0/(max-min)+"æ¬¡/ç§’");
     }
 }

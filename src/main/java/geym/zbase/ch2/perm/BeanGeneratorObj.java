@@ -1,13 +1,14 @@
 package geym.zbase.ch2.perm;
-import java.util.HashMap;  
-import java.util.Map;  
-  
-import net.sf.cglib.asm.ClassVisitor;  
-import net.sf.cglib.asm.Type;  
-import net.sf.cglib.beans.BeanGenerator;  
-import net.sf.cglib.core.ClassEmitter;  
-import net.sf.cglib.core.Constants;  
-import net.sf.cglib.core.EmitUtils; 
+
+import net.sf.cglib.beans.BeanGenerator;
+import net.sf.cglib.core.ClassEmitter;
+import net.sf.cglib.core.Constants;
+import net.sf.cglib.core.EmitUtils;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.Type;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  */
