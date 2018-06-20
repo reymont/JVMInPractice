@@ -32,6 +32,12 @@
             <artifactId>cglib-nodep</artifactId>
             <version>3.1</version>
         </dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
@@ -66,7 +72,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>tij4</finalName>
+		<finalName>JVMInPractice</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -84,11 +90,11 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<archive>
-						<manifest>
-							<mainClass>sql.MySQLJDBC</mainClass>
-						</manifest>
-					</archive>
+					<!--<archive>-->
+						<!--<manifest>-->
+							<!--<mainClass>sql.MySQLJDBC</mainClass>-->
+						<!--</manifest>-->
+					<!--</archive>-->
 				</configuration>
 				<executions>
 					<execution>

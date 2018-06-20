@@ -35,7 +35,7 @@ public class Inst2 {
 	}
 
 	/**
-	 * tableswitch Á¬Ğø
+	 * tableswitch è¿ç»­
 	 * 
 	 * @param i
 	 */
@@ -48,7 +48,7 @@ public class Inst2 {
 	}
 
 	/**
-	 * lookupswitch ²»Á¬Ğø
+	 * lookupswitch ä¸è¿ç»­
 	 * 
 	 * @param i
 	 */
@@ -61,7 +61,7 @@ public class Inst2 {
 	}
 
 	/**
-	 * ÉÙÊı²»Á¬Ğø »á±àÒëÎªÁ¬ĞøµÄtableswitch
+	 * å°‘æ•°ä¸è¿ç»­ ä¼šç¼–è¯‘ä¸ºè¿ç»­çš„tableswitch
 	 * 
 	 * @param i
 	 */

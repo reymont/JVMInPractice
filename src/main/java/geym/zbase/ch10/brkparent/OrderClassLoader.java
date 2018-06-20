@@ -25,6 +25,8 @@ public class OrderClassLoader extends ClassLoader {
 
 	protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
 		// First, check if the class has already been loaded
+		// 通过findClass()读取class文件，并将二进制流定义为Class对象
+		// 如果加载不到，则委托双亲加载
 		Class re = findClass(name);
 		if (re == null) {
 			System.out.println("I can't load the class:" + name + " need help from parent");
