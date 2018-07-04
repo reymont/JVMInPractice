@@ -35,7 +35,7 @@ public class AsmCreateField extends ClassLoader implements Opcodes {
 		mw.visitEnd();
 		byte[] code = cw.toByteArray();
 		
-        FileOutputStream fos=new FileOutputStream(new File("D:/ExampleCreateF.class"));
+        FileOutputStream fos=new FileOutputStream(new File("C:/ExampleCreateF.class"));
         fos.write(code);
         fos.close();
         
